@@ -1,0 +1,189 @@
+:root {
+  --red-light : hsl(0, 100%, 67%);
+  --yellow-orangey : hsl(39, 100%, 56%);
+  --green-teal : hsl(166, 100%, 37%);
+  --blue-cobalt : hsl(234, 85%, 45%);
+
+  --slate-blue : hsl(252, 100%, 67%);
+  --royal-blue : hsl(241, 81%, 54%);
+  --violet-blue : hsla(256, 72%, 46%, 1);
+  --persian-blue :  hsla(241, 72%, 46%, 0);
+
+  --white :  hsl(0, 0%, 100%);
+  --pale-blue :  hsl(221, 100%, 96%);
+  --light-lavender :  hsl(241, 100%, 89%);
+  --dark-gray-blue :  hsl(224, 30%, 27%);
+}
+
+@font-face {
+  font-family: 'HankenGrotesk';
+  src: local("HaneknGrotesk"), url('./assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+
+.results-container h1,
+ .results-container h3,
+  .results-container h4,
+  .results-container p {
+  margin: 0;
+}
+
+.results-container h4, p {
+  font-size: .8em;
+}
+
+.results-container {
+  font-family: 'HankenGrotesk';
+}
+
+.title {
+  /* Created with https://www.css-gradient.com */
+  background: var(--slate-blue);
+  background: -webkit-linear-gradient(top, var(--slate-blue), var(--royal-blue));
+  background: -moz-linear-gradient(top, var(--slate-blue), var(--royal-blue));
+  background: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue));
+  border-radius: 0 0 2em 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  color: var(--white);
+  gap: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title-circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  width: 6em;
+  padding: 1em;
+  box-shadow: inset 0px 70px 50px 0px var(--violet-blue);
+}
+
+.title-circle h4 {
+  font-size: 3em;
+}
+
+.title-circle p {
+  color: var(--pale-blue);
+}
+
+.title-text {
+  text-align: center;
+  padding: 0em 6em;
+}
+
+.title-text p {
+  color: var(--light-lavender);
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 2em;
+  gap: 1em;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.summary-item {
+  padding: .5em;
+  border-radius: .5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-item strong {
+  color: var(--dark-gray-blue);
+}
+
+.summary-item > h4 {
+  color: #9e98a2;
+}
+
+.summary-container div {
+  display: flex;
+  gap: .5em;
+}
+
+.reaction {
+  background-color: #fff6f5;
+  color: var(--red-light);
+}
+
+.memory {
+  background-color: #fffbf2;
+  color: var(--yellow-orangey);
+}
+
+.verbal {
+  background-color: #f2fbfa;
+  color: var(--green-teal);
+}
+
+.visual {
+  background-color: #f3f3fd;
+  color: var(--blue-cobalt);
+}
+
+.results-button {
+  padding: 1em;
+  background-color: var(--dark-gray-blue);
+  color: var(--white);
+  border-radius: 2em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.results-button:hover {
+  cursor: pointer;
+  background: var(--slate-blue);
+  background: -webkit-linear-gradient(top, var(--slate-blue), var(--royal-blue));
+  background: -moz-linear-gradient(top, var(--slate-blue), var(--royal-blue));
+  background: linear-gradient(to bottom, var(--slate-blue), var(--royal-blue));
+  border-color: var(--slate-blue);
+}
+
+@media (min-width:550px) {
+  .background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+  }
+
+  .results-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 9px 6px 20px 0px #e8eefc;
+    border-radius: 2em;
+    min-width: 30em;
+    justify-content: space-between;
+  }
+
+  .title {
+    max-width: 15em;
+    border-radius: 2em;
+    justify-content: center;
+  }
+
+  .title-circle {
+    width: 50%;
+  }
+  
+  .title-text {
+    padding: 0;
+  }
+  .summary-container {
+    width: 100%;
+    padding: 1em;
+  }
+  .results-button {
+    padding: .5em 1em;
+  }
+}

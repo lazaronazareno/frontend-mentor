@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  background-color: #252525;
+  color: #ffffff;
+  border-radius: 1em;
+  padding: .5em 1em;
+  text-decoration: none;
+  right: 0;
+}
+
+.menu {
+  min-height: 100vh;
+  background-color: #252525;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Major Mono Display', monospace;
+  gap: 1em;
+  text-align: center;
+}
+
+.menu > a {
+  padding: 1em 2em;
+  background-color: bisque;
+  color: black;
+  border-radius: 1em;
+  text-decoration: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin: .5em;
+  width: 100%;
+}
+
+footer a {
+  color: orange;
+}
