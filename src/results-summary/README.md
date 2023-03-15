@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://frontend-m-challenges.netlify.app/)
+- Solution URL: [Github](https://github.com/lazaronazareno/frontend-mentor/tree/master/src/results-summary)
+- Live Site URL: [Netlify](https://frontend-m-challenges.netlify.app/results-summary)
 
 ## My process
 
