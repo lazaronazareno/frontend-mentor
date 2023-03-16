@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom'
 import Layout from './layout'
 import Menu from './menu'
 import NftCard from './nft-card-component'
+import OrderSummary from './order-summary'
 import ProductPreviewCard from './product-preview-card'
 import QrCode from './qr-code-component'
 import Rating from './rating-component'
@@ -17,6 +18,7 @@ function App() {
         <Route path='/rating' element={<Rating />} />
         <Route path='/qr-code' element={<QrCode />} />
         <Route path='/nft-card' element={<NftCard />} />
+        <Route path='/order-summary' element={<OrderSummary />} />
       </Route>
     </Routes>
   )
