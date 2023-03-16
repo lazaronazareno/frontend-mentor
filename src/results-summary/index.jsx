@@ -21,15 +21,17 @@ export default function Results() {
         </div>
         <div className='summary-container'>
           <h4>Summary</h4>
-          {data.map(item => (
-            <div className={`summary-item ${item.category.toLowerCase()}`} key={item.category}>
-              <div>
-                <img src={item.icon} alt={item.category} />
-                <h4>{item.category}</h4>
+          <div className='summary-list'>
+            {data.map(item => (
+              <div className={`summary-item ${item.category.toLowerCase()}`} key={item.category}>
+                <div>
+                  <img src={item.icon} alt={item.category} />
+                  <h4>{item.category}</h4>
+                </div>
+                <h4><strong>{item.score}</strong> / 100</h4>
               </div>
-              <h4><strong>{item.score}</strong> / 100</h4>
-            </div>
-          ))}
+            ))}
+          </div>
           <button className='results-button' type='button'>Continue</button>
         </div>
       </div >
