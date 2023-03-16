@@ -34,7 +34,7 @@ export default function Results() {
           </div>
           <button className='results-button' type='button'>Continue</button>
         </div>
-      </div >
+      </div>
     </div>
   )
 }

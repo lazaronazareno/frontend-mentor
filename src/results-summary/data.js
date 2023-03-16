@@ -5,23 +5,23 @@ import visual from './assets/images/icon-visual.svg'
 
 export const data = [
   {
-    "category": "Reaction",
-    "score": 80,
-    "icon": reaction
+    category: 'Reaction',
+    score: 80,
+    icon: reaction
   },
   {
-    "category": "Memory",
-    "score": 92,
-    "icon": memory
+    category: 'Memory',
+    score: 92,
+    icon: memory
   },
   {
-    "category": "Verbal",
-    "score": 61,
-    "icon": verbal
+    category: 'Verbal',
+    score: 61,
+    icon: verbal
   },
   {
-    "category": "Visual",
-    "score": 72,
-    "icon": visual
+    category: 'Visual',
+    score: 72,
+    icon: visual
   }
 ]

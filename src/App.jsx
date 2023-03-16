@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import Menu from './menu'
 import ProductPreviewCard from './product-preview-card'
 import QrCode from './qr-code-component'
