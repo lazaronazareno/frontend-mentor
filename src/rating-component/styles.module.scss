@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+$orange : hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+
+$fontSize : 15px;
+$fontFamily : 'Overpass', sans-serif;
+
+h1, h2,  p {
+  margin: 0;
+}
+
+.background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $veryDarkBlue;
+}
+
+.card {
+  font-family: $fontFamily;
+  background-color: $darkBlue;
+  color: $white;
+  width: 21em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1.5em;
+  font-size: $fontSize;
+/*background : radial-gradient(circle at top, hsl(216, 12%, 54%) -655%, transparent, hsl(213, 19%, 18%) 266%, hsl(213, 19%, 18%), transparent, hsl(213, 19%, 18%) 100%);
+  background: radial-gradient(ellipse at top, $mediumGrey -700%, transparent),            
+              radial-gradient(ellipse at bottom, transparent, $darkBlue 250%); */
+  background: radial-gradient(circle at top, hsl(217, 12%, 63%) 0%, hsl(213, 19%, 18%) 0%, transparent 162%);
+}
+
+.card_icon {
+  padding: .5em;
+  border-radius: 100%;
+  background-color: $darkBlue;
+  width: 1em;
+}
+
+.card h1 {
+  font-size: calc(2*$fontSize);
+}
+
+.card p {
+  color: $lightGrey;
+}
+
+.card_list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_item {
+  background-color: $darkBlue;
+  color: $white;
+  aspect-ratio: 1/1;
+  width: 3em;
+  height: 3em;
+  border: none;
+  border-radius: 100%;
+}
+
+.card_item:hover {
+  cursor: pointer;
+  background-color: $lightGrey;
+}
+
+.card_item.selected {
+  background-color: $orange;
+}
+
+.card_submit {
+  background-color: $orange;
+  color: $white;
+  padding: 1em 2em;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-family: $fontFamily;
+  border-radius: 3em;
+}
+
+.card_submit:hover {
+  background-color: $white;
+  color: $orange;
+  cursor: pointer;
+}
+
+.card_image {
+  width: 10rem;
+}
+
+.card_result {
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.card_result__icon {
+  width: 2.5em;
+  border-radius: 100%;
+  position: absolute;
+  left: .5em;
+  top: .5em;
+  background-color: $darkBlue;
+}
+
+.card_result__icon:hover {
+  cursor: pointer;
+}
+
+.card_result__text {
+  background-color: $darkBlue;
+  color: $orange!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .2em 1em;
+  border-radius: 1em;
+}
