@@ -38,6 +38,7 @@ h1, h2,  p {
   background: radial-gradient(ellipse at top, $mediumGrey -700%, transparent),            
               radial-gradient(ellipse at bottom, transparent, $darkBlue 250%); */
   background: radial-gradient(circle at top, hsl(217, 12%, 63%) 0%, hsl(213, 19%, 18%) 0%, transparent 162%);
+  /* background: linear-gradient(150deg, var($darkBlue), var($veryDarkBlue)); */
 }
 
 .card_icon {

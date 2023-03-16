@@ -1,12 +1,10 @@
 import './assets/fonts/HankenGrotesk-VariableFont_wght.ttf'
 import './styles.css'
 import { data } from './data'
-import Header from '../header'
 
 export default function Results() {
   return (
     <div className='background'>
-      <Header />
       <div className='results-container'>
         <div className='title'>
           <h4>Your Result</h4>
@@ -15,7 +13,7 @@ export default function Results() {
             <p>of 100</p>
           </div>
           <div className='title-text'>
-            <h3>Great</h3>
+            <h1>Great</h1>
             <p>You scored higher than 65% of the people who have taken these tests.</p>
           </div>
         </div>

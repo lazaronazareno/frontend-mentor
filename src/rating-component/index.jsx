@@ -3,7 +3,6 @@ import arrow from './images/arrow.png'
 import icon from './images/icon-star.svg'
 import image from './images/illustration-thank-you.svg'
 import { useState } from 'react'
-import Header from '../header'
 
 export default function Rating() {
   const list = Array.from(Array(5).keys())
@@ -12,7 +11,6 @@ export default function Rating() {
 
   return (
     <div className={styles.background}>
-      <Header />
       {isSubmited
         ? (
           <div className={`${styles.card} ${styles.card_result}`}>

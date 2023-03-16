@@ -4,7 +4,6 @@ import ethIcon from './images/icon-ethereum.svg'
 import timeIcon from './images/icon-clock.svg'
 import viewIcon from './images/icon-view.svg'
 import styles from './styles.module.scss'
-import Header from '../header'
 
 const NFT = {
   img: nft,
@@ -19,14 +18,13 @@ const NFT = {
 export default function NftCard() {
   return (
     <div className={styles.background}>
-      <Header />
       <div className={styles.card}>
         <div className={styles.card_img}>
           <img className={styles.card_img__nft} src={NFT.img} alt={NFT.title} />
           <div className={styles.card_img__overlay} />
           <img className={styles.card_img__view} src={viewIcon} alt='view-icon' />
         </div>
-        <h2>{NFT.title}</h2>
+        <h1>{NFT.title}</h1>
         <p>{NFT.description}</p>
         <div className={styles.card_details}>
           <div>

@@ -12,7 +12,7 @@ export default function QrCode() {
     <div className={styles.background}>
       <div className={styles.card}>
         <img src={INFO.img} alt={INFO.title} />
-        <h2>{INFO.title}</h2>
+        <h1>{INFO.title}</h1>
         <p>{INFO.description}</p>
       </div>
     </div>

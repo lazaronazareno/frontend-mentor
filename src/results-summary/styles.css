@@ -175,14 +175,12 @@
     justify-content: center;
     box-shadow: 9px 6px 20px 0px #e8eefc;
     border-radius: 2em;
-    min-width: 42em;
-    min-height: 28rem;
     justify-content: space-between;
   }
 
   .title {
     border-radius: 2em;
-    max-width: 21em;
+    max-width: 19em;
     justify-content: space-evenly;
   }
   
@@ -192,9 +190,10 @@
 
   .summary-container {
     width: 100%;
-    max-width: 21em;
-    justify-content: space-evenly;
+    max-width: 19em;
+    justify-content: space-between;
     padding: 2em;
+    box-sizing: border-box;
   }
 
   .results-button {
