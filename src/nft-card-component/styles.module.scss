@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$dark-blue: hsl(217, 54%, 11%);
+$medium-dark-blue : hsl(216, 50%, 16%);
+$light-dark-blue: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+$shadow-medium-dark-blue: hsl(216, 50%, 10%);
+$shadow-dark-blue: hsl(217, 54%,12%);
+
+$font-size: 18px;
+$font-family : 'Outfit', sans-serif;
+
+h3 {
+  margin: 0;
+}
+
+.background {
+  background-color: $dark-blue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1/1.6;
+  border-radius: .5em;
+  background-color: $medium-dark-blue;
+  color: $white;
+  box-sizing: border-box;
+  padding: 1.5em;
+  max-width: 19em;
+  font-family: $font-family;
+  font-size: $font-size;
+  gap: .5em;
+  justify-content: space-between;
+  box-shadow: 3px 20px 5px 15px $shadow-medium-dark-blue, 0px 20px 20px 20px $shadow-dark-blue;
+}
+
+.card_img {
+  position: relative;
+  aspect-ratio: 1;
+  height: 100%;
+}
+
+.card_img__nft {
+  width: 100%;
+  height: inherit;
+  border-radius: .5em;
+}
+
+.card_img__overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $cyan;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: .5em;
+}
+
+.card_img:hover > .card_img__overlay {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.card_img__view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3em !important;
+  aspect-ratio: 1;
+  height: 3em!important;
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.card_img:hover > .card_img__view {
+  opacity: 1;
+}
+
+.card h2 {
+  font-size: 1.4*$font-size;
+  font-weight: 600;
+}
+
+.card h2:hover {
+  color: $cyan;
+  cursor: pointer;
+}
+
+.card p {
+  color: $soft-blue;
+  font-size: $font-size;
+}
+
+.card_details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $light-dark-blue;
+  padding: .5em 0;
+}
+
+.card_details > div {
+  display: flex;
+  align-items: center;
+  gap: .5em;
+}
+
+.card_details h3 {
+  color: $cyan;
+  font-size: $font-size;
+  font-weight: 600;
+}
+
+.card_author {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  
+}
+
+.card_author > img {
+  width: 2em;
+  border: 1px solid $white;
+  border-radius: 100%;
+}
+
+.card_author span {
+  color: $white;
+}
+
+.card_author span:hover {
+  color: $cyan;
+  cursor: pointer;
+}
