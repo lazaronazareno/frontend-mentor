@@ -40,7 +40,7 @@ body {
   text-align: center;
 }
 
-.menu > a {
+.menu :not(footer) a {
   padding: 1em 2em;
   background-color: bisque;
   color: black;
