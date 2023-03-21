@@ -1,12 +1,12 @@
 import { Route, Routes } from 'react-router-dom'
 import Layout from './layout'
 import Menu from './menu'
-import NftCard from './nft-card-component'
-import OrderSummary from './order-summary'
-import ProductPreviewCard from './product-preview-card'
-import QrCode from './qr-code-component'
-import Rating from './rating-component'
-import Results from './results-summary'
+import NftCard from './components/nft-card-component'
+import OrderSummary from './components/order-summary'
+import ProductPreviewCard from './components/product-preview-card'
+import QrCode from './components/qr-code-component'
+import Rating from './components/rating-component'
+import Results from './components/results-summary'
 
 function App() {
   return (
