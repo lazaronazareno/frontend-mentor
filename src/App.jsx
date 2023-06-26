@@ -8,6 +8,7 @@ import QrCode from './components/qr-code-component'
 import Rating from './components/rating-component'
 import Results from './components/results-summary'
 import StatsCard from './components/stats-preview-card'
+import ColumnsCard from './components/columns-card'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/nft-card' element={<NftCard />} />
         <Route path='/order-summary' element={<OrderSummary />} />
         <Route path='/stats-preview-card' element={<StatsCard />} />
+        <Route path='/3-columns-card' element={<ColumnsCard />} />
       </Route>
     </Routes>
   )
