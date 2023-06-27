@@ -13,6 +13,7 @@ export default function Menu() {
         <Link to='/order-summary'>Order Summary</Link>
         <Link to='/stats-preview-card'>Stats Preview Card</Link>
         <Link to='/3-columns-card'>3 Column Card</Link>
+        <Link to='/newsletter'>Newsletter</Link>
       </div>
       <footer className='attribution'>
         Challenge by <a href='https://www.frontendmentor.io?ref=challenge' target='_blank' rel='noreferrer'>Frontend Mentor</a>.

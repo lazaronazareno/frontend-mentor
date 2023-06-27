@@ -9,6 +9,7 @@ import Rating from './components/rating-component'
 import Results from './components/results-summary'
 import StatsCard from './components/stats-preview-card'
 import ColumnsCard from './components/columns-card'
+import { Newsletter } from './components/newsletter'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path='/order-summary' element={<OrderSummary />} />
         <Route path='/stats-preview-card' element={<StatsCard />} />
         <Route path='/3-columns-card' element={<ColumnsCard />} />
+        <Route path='/newsletter' element={<Newsletter />} />
       </Route>
     </Routes>
   )

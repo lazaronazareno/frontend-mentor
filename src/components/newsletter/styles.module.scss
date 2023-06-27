@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$tomato: hsl(4, 100%, 67%);
+$dark-Slate-Grey: hsl(234, 29%, 20%);
+$charcoal-Grey: hsl(235, 18%, 26%);
+$grey: hsl(231, 7%, 60%);
+$white: hsl(0, 0%, 100%);
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $dark-Slate-Grey;
+  min-height: 100vh;
+}
+
+.newsletter_card {
+  max-width: 375px;
+  background-color: $white;
+}
+
+.illustration {
+  width: 100%;
+  max-width: 375px;
+  min-height: 18.5rem;
+  background: url('./images/illustration-sign-up-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.newsletter_info, .isSubmitted {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.newsletter h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.newsletter_info ul {
+  list-style: none;
+	padding-left: 0;
+}
+
+.newsletter_info ul li {
+	padding-left: 2em;
+	margin-bottom: 0.5em;
+  position: relative;
+}
+
+.newsletter_info ul li::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: .1em;
+	width: 2em;
+	height: 2em;
+	background-repeat: no-repeat;
+	background-image: url('./images/icon-list.svg');
+}
+
+.newsletter_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter_form label {
+  font-weight: 700;
+  font-size: .6rem;
+  margin-bottom: .5rem;
+}
+
+.newsletter_form input {
+  outline: 1px solid $grey;
+  padding: 1rem;
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+}
+
+.inputError {
+  color: $tomato;
+  background-color: hsl(3.93deg 100% 67.06% / 20%);
+  outline: 1px solid $tomato!important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.newsletter_form input:hover {
+  cursor: pointer;
+}
+
+.newsletter_form input:focus {
+  outline: 2px solid black;
+}
+
+.newsletter_form button, .isSubmitted button {
+  padding: 1rem;
+  border-radius: .5rem;
+  background-color: $dark-Slate-Grey;
+  color: $white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.newsletter_form button:hover, .isSubmitted button:hover {
+  cursor: pointer;
+  background: #FF5379;
+  background: linear-gradient(90deg, #FF5379, $tomato);
+  box-shadow: 0px 1rem 3rem 0px $tomato;
+  font-weight: 700;
+}
+
+.isSubmitted {
+  gap: 2rem;
+  height: 100vh;
+}
+
+.newsletter_label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.newsletter_label span {
+  font-weight: 700;
+  font-size: .6rem;
+  margin-bottom: .5rem;
+  color: $tomato;
+}
+
+
+.isSubmitted h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+
+.isSubmitted_check {
+  width: 4rem;
+  height: 4rem;
+  background: url('./images/icon-success.svg');
+}
+
+.isSubmitted button {
+  margin-top: auto;
+}
+
+@media (min-width: 768px) {
+  .newsletter, .newsletter_info {
+    justify-content: center;
+  }
+
+  .newsletter_card {
+    background-color: $white;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    max-width: 53rem;
+    gap: 3rem;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+
+  .illustration {
+    min-width: 18rem;
+    min-height: 32.5rem;
+    background: url('./images/illustration-sign-up-desktop.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .newsletter_info {
+    min-width: 26rem;
+  }
+
+  .newsletter_info h1 {
+    font-size: 3rem;
+  }
+}
